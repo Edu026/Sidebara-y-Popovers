@@ -20,8 +20,10 @@ void main() async {
 
   // Define the app as a ChangeNotifierProvider
   runApp(
-    ChangeNotifierProvider(
-      create: (context) => AppData(),
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => AppData()),
+      ],
       child: const App(),
     ),
   );

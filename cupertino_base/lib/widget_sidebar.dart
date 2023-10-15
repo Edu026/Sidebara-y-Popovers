@@ -17,7 +17,7 @@ class WidgetSidebars extends StatefulWidget {
   final Widget? right;
   final Widget central;
 
-  const WidgetSidebars({
+  WidgetSidebars({
     Key? key,
     required this.isSidebarLeftVisible,
     required this.isSidebarRightVisible,
