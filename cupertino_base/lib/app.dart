@@ -8,15 +8,16 @@ class App extends StatefulWidget {
   @override
   AppState createState() => AppState();
 }
+
 // Main application state
 class AppState extends State<App> {
-    // Definir el contingut del widget 'App'
-    @override
-    Widget build(BuildContext context) {
-        return CupertinoApp(
-            debugShowCheckedModeBanner: false,
-            theme: CupertinoThemeData(brightness: Brightness.light),
-            home: const LayoutDesktop(),
-        );
-    }
+  // Definir el contingut del widget 'App'
+  @override
+  Widget build(BuildContext context) {
+    return const CupertinoApp(
+      debugShowCheckedModeBanner: false,
+      theme: CupertinoThemeData(brightness: Brightness.light),
+      home: LayoutDesktop(),
+    );
+  }
 }

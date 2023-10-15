@@ -2,14 +2,14 @@ import 'package:flutter/cupertino.dart';
 import 'package:provider/provider.dart';
 import 'app_data.dart';
 
-class LayoutPartLeft extends StatefulWidget {
-  const LayoutPartLeft({Key? key}) : super(key: key);
+class LayoutPartRight extends StatefulWidget {
+  const LayoutPartRight({Key? key}) : super(key: key);
 
   @override
-  LayoutPartLeftState createState() => LayoutPartLeftState();
+  LayoutPartRightState createState() => LayoutPartRightState();
 }
 
-class LayoutPartLeftState extends State<LayoutPartLeft> {
+class LayoutPartRightState extends State<LayoutPartRight> {
   @override
   Widget build(BuildContext context) {
     AppData appData = Provider.of<AppData>(context);
@@ -19,7 +19,7 @@ class LayoutPartLeftState extends State<LayoutPartLeft> {
       child: const Column(
         crossAxisAlignment:
             CrossAxisAlignment.start, // Alinea els elements a l'esquerra
-        children: [Text("Left")],
+        children: [Text("Right")],
       ),
     );
   }
